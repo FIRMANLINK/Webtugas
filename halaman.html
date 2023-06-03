@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        .tombol1 {
+            width: 300px;
+            border: none;
+            outline: none;
+            color: black;
+            height: 50px;
+            background-color: rgb(229, 240, 231);
+            border-radius: 50px;
+            margin: 10px 0 10px 0;
+            opacity: 30%;
+            box-shadow: 5px 5px 5px black;
+            font-weight: 700;
+
+        }
+
+        .tombol1:hover {
+            opacity: 100%;
+            box-shadow: 1px 5px 7px 1px black;
+        }
+
+        .tomboln {
+            width: 300px;
+            border: none;
+            outline: none;
+            color: black;
+            height: 50px;
+            background-color: rgb(229, 240, 231);
+            border-radius: 50px;
+            margin: 10px 0 10px 0;
+            opacity: 30%;
+            box-shadow: 5px 5px 5px black;
+
+        }
+
+        .tomboln:hover {
+            opacity: 100%;
+            box-shadow: 1px 5px 7px 1px black;
+        }
+
+        .tombol {
+            width: 300px;
+            border: none;
+            outline: none;
+            color: black;
+            height: 50px;
+            background-color: rgb(229, 240, 231);
+            border-radius: 50px;
+            margin: 10px 0 10px 0;
+            font-family: Arial, Helvetica, sans-serif;
+            opacity: 30%;
+            box-shadow: 5px 5px 5px black;
+            font-weight: 700;
+        }
+
+        .input a {
+            font-weight: 700;
+        }
+
+        .tombol:hover {
+            opacity: 1%;
+            box-shadow: 1px 5px 7px 1px black;
+        }
+
+
+        .konten {
+            justify-content: center;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .judul {
+            padding-bottom: 10px;
+        }
+
+        body {
+            background-color: #111;
+            background-position: 0 10px;
+            height: 1700px;
+
+        }
+
+        .judul>h1 {
+            font-size: 50px;
+            color: rgb(253, 253, 255);
+            font-weight: 600px;
+            padding-top: 10px;
+
+
+        }
+
+        .textmini>a {
+            color: wheat;
+            font-size: small;
+            text-decoration: none;
+        }
+
+
+        .isinya>a {
+
+            padding: 10px;
+
+        }
+
+        .uwu {
+            color: blue;
+        }
+
+        .footer {
+            margin-top: 20px;
+            color: orangered;
+
+
+        }
+
+        .foto {
+            width: 200px;
+            height: 200px;
+            position: center;
+
+        }
+
+        .logo>img {
+            border-radius: 80px;
+            border: 5px solid rgb(43, 43, 48);
+            width: 200px;
+            height: 200px;
+        }
+
+
+        ul {
+            font-size: 18px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(58, 41, 214);
+            position: -webkit-sticky;
+            /* Safari */
+            position: sticky;
+            top: 0;
+
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+
+        .header {
+            height: 300px;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://kawai.shikimori.one/system/user_images/original/437889/1464126.jpg);
+            background-size: cover;
+            align-items: center;
+            text-align: center;
+            padding-top: 100px;
+            color: white;
+
+
+        }
+
+        .donasi .qr {
+            width: 330px;
+            height: 360px;
+            border-radius: 60px;
+            
+        }
+
+        .donasi {
+            
+            margin-top: 10px;
+            margin-left: 12px;
+            text-align: center;
+            padding-top: 40px;
+            color: white;
+        }
+        .bobo {
+            margin-top: 40px;
+        }
+
+        .donasi h1 {
+            font-weight: 700;
+        }
+
+        .header h2 span {
+            color: rgb(58, 41, 214);
+            background-color: aliceblue;
+            font-size: 30px;
+            padding-left: 5px;
+            padding-right: 5px;
+            
+            
+        }
+
+        .mini {
+        font-size: small;
+        }
+
+        .footer1 {
+            text-align: center;
+            margin-top: 50px;
+            
+        }
+
+        .footer1 a {
+            font-size: 50px;
+            padding-left: 25px;
+            padding-right: 25px;
+            
+        }
+        
+        .judul h1 {
+            margin-top: 10px;
+            font-weight: 700;
+        }
+
+       
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>Contact <span>Developer</span></h2>
+        <p class="mini">Jika ada problem bisa dm langsung web masih proses</p>
+    </div>
+    <ul>
+        <li><a href="menu.html">Home</a></li>
+        <li><a class="active" href="#">Contact</a></li>
+        <li><a href="#">Seting</a></li>
+    </ul>
+    </div>
+
+    <div class="konten">
+        <div class="isikonten">
+
+
+            <div class="logo">
+                <img src="https://i.pinimg.com/originals/36/73/b2/3673b220d40793ab3bdb0114aca65803.gif  " alt="">
+            </div>
+
+            <div class="judul">
+                <h1>SUPPORT <span class="uwu">ME</span></h1>
+            </div>
+
+
+
+
+            <div class="input">
+                <a href="https://instagram.com/firmanhadiyansyah_?igshid=ZDc4ODBmNjlmNQ=="><input type="submit" class="tombol1" value="instagram" id=""></a>
+            </div>
+
+            <div class="input">
+                <a href="https://www.tiktok.com/@roronoa_kibutsu?is_from_webapp=1&sender_device=pc"><input type="submit" class="tombol1" value="tiktok" id=""></a>
+            </div>
+
+            <div class="input">
+                <a href="https://www.facebook.com/firman.hadiansyah.9809?mibextid=ZbWKwL"><input type="submit" class="tombol1" value="Facebook" id=""></a>
+            </div>
+
+
+            <div class="textmini">
+                <a href="">Firman hadiyansyah xi rpl</a>
+            </div>
+        </div>
+        <div class="footer1">
+            <div class="isinya">
+                <a href="https://www.facebook.com/firman.hadiansyah.9809?mibextid=ZbWKwL"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/firmanhadiyansyah_?igshid=ZDc4ODBmNjlmNQ=="><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@roronoa_kibutsu?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>  
+    <div class="donasi">
+        <h1>PAYMENT DANA</h1>
+        <br><br>
+        <img class="qr" src="dana.png" alt="">  
+    </div>
+
+    
+   
+
+</body>
+
+</html>
